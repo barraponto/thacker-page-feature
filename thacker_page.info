@@ -1,0 +1,8 @@
+core = "6.x"
+dependencies[] = "features"
+description = "Thacker.com.br Page feature"
+features[node][] = "page"
+name = "Thacker Page"
+package = "Thacker"
+project = "thacker_page"
+version = "6.x-1.0-dev"

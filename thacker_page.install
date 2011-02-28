@@ -1,0 +1,11 @@
+<?php
+
+function thacker_page_install() {
+  module_load_include('inc', 'thacker_page', 'thacker_page.strongarm');
+
+  $variables = thacker_page_strongarm();
+
+  foreach ($variables as $variable) {
+    variable_set($variable->name, $variable->value);
+  }
+}
